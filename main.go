@@ -173,7 +173,7 @@ const (
 // количество_повторов * длина_шага / м_в_км
 func (s Swimming) distance() float64 {
 	// вставьте ваш код ниже
-	return float64(s.Action) * SwimmingLenStep / MInKm
+	return float64(s.Action) * float64(s.LengthPool) * float64(s.CountPool) * SwimmingLenStep / MInKm
 }
 
 // Swimming структура, описывающая тренировку Плавание
